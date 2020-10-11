@@ -32,7 +32,7 @@
                 <ul class="navbar-nav mr-auto">
                   <li class="nav-item"><a class="nav-link" href="../index.php"><span class="fa fa-shopping-cart fa-lg"></span> Product Display Window</a></li>
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span> Product Registration Page</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./index2.html"><span class="fa fa-home fa-lg"></span> Information</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./information.html"><span class="fa fa-home fa-lg"></span> Information</a></li>
                 </ul>  
         </div>         
     </div>

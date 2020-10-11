@@ -63,8 +63,8 @@ async function jsfunction(images,titles,descriptions){
                 <ul class="navbar-nav mr-auto">
                     
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-shopping-cart fa-lg"></span> Product Display Window</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./simple-php-shopping-cart/rindex.php"><span class="fa fa-info fa-lg"></span> Product Registration Page</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./simple-php-shopping-cart/index2.html"><span class="fa fa-home fa-lg"></span> Information</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./simple-php-shopping-cart/product_registration.php"><span class="fa fa-info fa-lg"></span> Product Registration Page</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./simple-php-shopping-cart/information.html"><span class="fa fa-home fa-lg"></span> Information</a></li>
                 </ul>  
         </div>         
     </div>
@@ -73,7 +73,7 @@ async function jsfunction(images,titles,descriptions){
 <div class="row">
 <div id="product-grid">
     <div class="txt-heading">Products</div>
-    <a style="position: absolute;right: 15%" href="./simple-php-shopping-cart/rindex.php">Registration Page</a>
+    <a style="position: absolute;right: 15%" href="./simple-php-shopping-cart/product_registration.php">Registration Page</a>
     <p id="demo">ttt</p>
     <?php  
                 $query = "SELECT * FROM tbl_images ORDER BY id DESC";  
@@ -101,7 +101,7 @@ async function jsfunction(images,titles,descriptions){
      <br />
      <br />
      <br />
-    <a style="position: absolute;right: 15%" href="./simple-php-shopping-cart/qindex.php" target="_blank" rel="noopener noreferrer">Queue: <?php echo count($images_array) ?> </a>
+    <a style="position: absolute;right: 15%" href="./simple-php-shopping-cart/display_all.php" target="_blank" rel="noopener noreferrer">Queue: <?php echo count($images_array) ?> </a>
 </div>
 
 </div>
