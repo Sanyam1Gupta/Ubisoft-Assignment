@@ -32,7 +32,7 @@ async function jsfunction(images,titles,descriptions){
    }
    rr=images.length;
    document.getElementById("demo").innerHTML = document.getElementById("demo").innerHTML+ str;
-   await sleep(5000);
+   await sleep(30000);
     v++;
    }
    document.getElementById("demo").innerHTML="";
