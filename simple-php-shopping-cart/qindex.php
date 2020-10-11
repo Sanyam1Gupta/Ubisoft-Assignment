@@ -84,15 +84,15 @@ async function jsfunction(images,titles,descriptions){
     <div class="container">
         <div class="row">             
             <div class="col-7 col-sm-5">
-                <h5>Our Address</h5>
+                <h5>My Address</h5>
                 <address>
-                    Morena Link Rd,<br>   
-                    IIITM Campus,<br>
-                    Gwalior, Madhya Pradesh<br>
-                    <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
-                    <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+                    448/134,<br>   
+                    Asha Puram, Thakurganj<br>
+                    Lucknow, Uttar Pradesh<br>
+                    <i class="fa fa-phone fa-lg"></i>: +7080864810<br>
+                    <i class="fa fa-fax fa-lg"></i>: +9336149534<br>
                     <i class="fa fa-envelope fa-lg"></i>: 
-                    <a href="mailto:confusion@food.net">confusion@food.net</a>
+                    <a href="mailto:confusion@food.net">sanyam.gupta100001@gmail.com</a>
                 </address>
             </div>
             <div class="col-12 col-sm-4 align-self-center">
@@ -108,7 +108,7 @@ async function jsfunction(images,titles,descriptions){
         </div>
         <div class="row justify-content-center">             
             <div class="col-auto">
-                <p>© Copyright 2018 Ristorante Con Fusion</p>
+                <p>© Copyright 2020 Product Display</p>
             </div>
         </div>
     </div>
@@ -117,65 +117,6 @@ async function jsfunction(images,titles,descriptions){
 <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script type="text/javascript"> 
-var config = {
-                        apiKey: "#copy apiKey from your account",
-                        authDomain: "#use your value",
-                        databaseURL: "use yours",
-                        projectId: "use yours",
-                        storageBucket: "use yours",
-                        messagingSenderId: "use yours"
-
-                };
-        firebase.initializeApp(config);
-        const db = firebase.firestore();
-        db.settings( { timestampsInSnapshots: true });
-
-        var item1 = <?php echo json_encode($_SESSION["cart_item"]); ?>; 
-        //console.log(item1);
-        var namearr = new Array();
-        var quantityarr = new Array();
-        for(var index in item1){
-        namearr.push(item1[index]["name"]);
-        quantityarr.push(item1[index]["quantity"])
-        }   
-        var totalquan=<?php echo $total_quantity; ?>;
-        var totalprice=<?php echo $total_price; ?>;
-        //console.log(totalprice);
-        $(document).ready(function() {
-            //console.log("abc");
-            $('#btndeliver').click(function(e) {
-            //alert("Order Placed");
-            e.preventDefault();
-            $(".error").remove();
-            //console.log("xyz");
-            var name = $('#deliveryAdd').val();
-            var c =0;
-            if (name.length < 1) 
-            {
-                $('#deliveryAdd').after('<span class="error">This field is required</span>');
-                c=1;
-            }
-            if(c==0)
-            {
-                console.log("eventListener");
-                db.collection('orders').add({
-                    itemName: namearr,
-                    itemQuantity: quantityarr,
-                    totalQuantity: totalquan,
-                    totalPrice: totalprice,
-					deliveryAddress: name
-                }).then(function(){
-                    console.log("Status saved");
-                    alert("Your Order is Placed!!! If You Want You Can Continue Shopping Or To Exit From Cart, Press \"Empty Cart\" Button");
-					//<a href="index.php?action=empty"></a>
-                }).catch(function(error){
-                        console.log("error...error", error);
-                                });
-            }
-            });
-        });
-</script>  
 </BODY>
 </HTML>
 
